@@ -1,1 +1,27 @@
+
+# Xbase++ Compiler
+*.obj
+*.exe
+*.dll
+*.lib
+*.err
+*.log
+
+# Build-Verzeichnisse
+obj/
+bin/
+Debug/
+Release/
+
+# Temporär
+*.bak
+*.tmp
+*.~*
+*~
+
+# Workbench temporäre Dateien
+*.ppo
+*.dcu
+
+# Debug Variablen
 *.diana

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<version number="1.0" />
+<session>
+  <active file=".\main2.prg" target=".\Hello World gui.exe" />
+  <openfiles>
+    <openfile path=".\main.prg" column="3" line="4" />
+    <openfile path=".\main1.prg" column="0" line="0" />
+    <openfile path=".\main2.prg" column="21" line="51" />
+  </openfiles>
+</session>

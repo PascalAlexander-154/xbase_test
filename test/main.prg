@@ -2,8 +2,8 @@
 
 PROCEDURE Main()
    Local cName
-   
-   ?"Input Name"
+
+   ?"Input kunden->NAME"
    ACCEPT TO cName
    ? "Hello",cName
    wait

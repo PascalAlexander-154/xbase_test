@@ -1,0 +1,33 @@
+
+------------------------------------------------------------------------------
+FEHLERPROTOKOLL von "C:\Users\Diana\OneDrive\Dokumente\Xbase++\projects\test\run\datenbankTest.exe" Datum: 28.07.2026 19:28:25
+
+Xbase++ Version     : Xbase++ (R) Version 2.00.2307
+Betriebssystem      : Windows 11 2009 Build 26200
+------------------------------------------------------------------------------
+oError:args         :
+          -> VALTYPE: N VALUE: -1
+          -> VALTYPE: C VALUE: -50.00
+oError:canDefault   : N
+oError:canRetry     : N
+oError:canSubstitute: J
+oError:cargo        : NIL
+oError:description  : Parameter hat falschen Typ
+oError:filename     : 
+oError:genCode      :          2
+oError:operation    : <-1> * <-50.00>
+oError:osCode       :          0
+oError:severity     :          2
+oError:subCode      :          3
+oError:subSystem    : BASE
+oError:thread       :          1
+oError:tries        :          0
+------------------------------------------------------------------------------
+CALLSTACK:
+------------------------------------------------------------------------------
+Aufgerufen von DBGUI:BEZAHLEVENT(263)
+Aufgerufen von (B)DBGUI:BEZAHL(220)
+Aufgerufen von XBPPUSHBUTTON:HANDLEEVENT(1554)
+Aufgerufen von DBGUI:EVENTLOOP(426)
+Aufgerufen von DBGUI:INIT(36)
+Aufgerufen von MAIN(11)

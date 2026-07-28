@@ -7,7 +7,7 @@ PROCEDURE Main()
    LOCAL oSLE
    LOCAL nEvent
    LOCAL mp1, mp2, oXbp
-   LOCAL cName := "Input Name"
+   LOCAL cName := "Input kunden->NAME"
    SetColor("N/W")
     CLS
 
@@ -26,6 +26,8 @@ PROCEDURE Main()
    // Button-Ereignis
    oButton:activate := ;
       {|| oSLE:getData(),MsgBox("Hallo " + cName) }
+
+
 
 
    // Event-Schleife

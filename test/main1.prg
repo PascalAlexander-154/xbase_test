@@ -4,10 +4,12 @@ class taschenrechner
       method setZahl2(nZahl)
       method setOperator(cOperator)
       method berechne()
+      method getError()
    protected:
       VAR  nZahl1
       var  nZahl2
       var  cOperator
+      var  nErrCode
 endclass
 
 method taschenrechner:setZahl1(nZahl)
@@ -22,7 +24,11 @@ method taschenrechner:setOperator(cOperator)
    ::cOperator:=cOperator
    return self
 
+method taschenrechner:getError()
+   return ::nErrCode
+
 method taschenrechner:berechne()
+   ::nErrCode:=0
    do case
       case ::cOperator == "+"
          return ::nZahl1+::nZahl2
@@ -32,12 +38,12 @@ method taschenrechner:berechne()
          return ::nZahl1*::nZahl2
       case ::cOperator == "/"
          if ::nZahl2 == 0
-            ?"Error: Teilen durch 0"
+            ::nErrCode := 1
             return NIL
          endif
          return ::nZahl1/::nZahl2
       otherwise
-         ?"Error: Operand: "+::cOperand+" nicht unterstützt"
+         ::nErrCode := 2
          return NIL
       end case
    return NIL
@@ -69,6 +75,14 @@ PROCEDURE Main
       ?"Ergebniss = ",xErgebniss
    else
       ?"Berechnung fehlgeschlagen"
+      do case
+         case oTasche:getError()==1
+            ?"Teilen durch 0"
+         case oTasche:getError()==2
+            ?"Unbekannter Operator"
+         otherwise
+            ?"Unbekannter Fehler",oTasche:getError()
+          end case
    endif
     wait
 RETURN

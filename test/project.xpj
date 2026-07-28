@@ -1,0 +1,123 @@
+[PROJECT]
+    TARGET_DIR = .\run
+    Version = 2.3
+    Project.xpj
+
+[Project.xpj]
+    test.exe
+    Taschenrechner.exe
+    HelloWorldgui.exe
+    HelloNameGUI.exe
+    taschenrechnerGUI.exe
+    datenbankTest.exe
+
+[test.exe]
+    COMPILE              = xpp
+    COMPILE_FLAGS        = /wi /wl /wu /q /w
+    DEBUG                = yes
+    GUI                  = no
+    LINKER               = alink
+    LINK_FLAGS           = 
+    RC_COMPILE           = arc
+    RC_FLAGS             = 
+    INTERMEDIATE_DEBUG   = .debug
+    INTERMEDIATE_RELEASE = .release
+// $START-AUTODEPEND
+    main.obj
+// $STOP-AUTODEPEND
+    main.prg
+
+[Taschenrechner.exe]
+    COMPILE              = xpp
+    COMPILE_FLAGS        = /wi /wl /wu /q /w
+    DEBUG                = yes
+    GUI                  = no
+    LINKER               = alink
+    LINK_FLAGS           = 
+    RC_COMPILE           = arc
+    RC_FLAGS             = 
+    INTERMEDIATE_DEBUG   = .debug
+    INTERMEDIATE_RELEASE = .release
+// $START-AUTODEPEND
+    main1.obj
+// $STOP-AUTODEPEND
+    main1.prg
+
+[HelloWorldgui.exe]
+    COMPILE              = xpp
+    COMPILE_FLAGS        = /wi /wl /wu /q /w
+    DEBUG                = yes
+    GUI                  = yes
+    LINKER               = alink
+    LINK_FLAGS           = 
+    RC_COMPILE           = arc
+    RC_FLAGS             = 
+    INTERMEDIATE_DEBUG   = .debug
+    INTERMEDIATE_RELEASE = .release
+// $START-AUTODEPEND
+    main2.obj
+// $STOP-AUTODEPEND
+    main2.prg
+
+[HelloNameGUI.exe]
+    COMPILE              = xpp
+    COMPILE_FLAGS        = /q /w /wi /wl /wu
+    DEBUG                = yes
+    GUI                  = yes
+    LINKER               = alink
+    LINK_FLAGS           = 
+    RC_COMPILE           = arc
+    RC_FLAGS             = 
+    INTERMEDIATE_DEBUG   = .debug
+    INTERMEDIATE_RELEASE = .release
+// $START-AUTODEPEND
+    main3.obj
+// $STOP-AUTODEPEND
+    main3.prg
+
+[taschenrechnerGUI.exe]
+    COMPILE              = xpp
+    COMPILE_FLAGS        = /wi /wl /wu /q /w 
+    DEBUG                = yes
+    GUI                  = yes
+    LINKER               = alink
+    LINK_FLAGS           = 
+    RC_COMPILE           = arc
+    RC_FLAGS             = 
+    INTERMEDIATE_DEBUG   = .debug
+    INTERMEDIATE_RELEASE = .release
+// $START-AUTODEPEND
+    main4.obj
+// $STOP-AUTODEPEND
+    main4.prg
+
+[datenbankTest.exe]
+    COMPILE              = xpp
+    COMPILE_FLAGS        = /wi /wl /wu /q /w 
+    DEBUG                = yes
+    GUI                  = yes
+    LINKER               = alink
+    LINK_FLAGS           = 
+    RC_COMPILE           = arc
+    RC_FLAGS             = 
+    INTERMEDIATE_DEBUG   = .debug
+    INTERMEDIATE_RELEASE = .release
+// $START-AUTODEPEND
+    datenbankGUI.obj
+    datenbankKunde.obj
+    datenbankRechnung.obj
+    datenbankSchnittstelle.obj
+    kunde.obj
+    main5.obj
+    rechnung.obj
+    testDb.obj
+// $STOP-AUTODEPEND
+    datenbankGUI.prg
+    datenbankKunde.prg
+    datenbankRechnung.prg
+    datenbankSchnittstelle.prg
+    kunde.prg
+    main5.prg
+    rechnung.prg
+    testDb.prg
+
